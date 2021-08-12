@@ -1,0 +1,151 @@
+.reviews {
+  padding: 30px 0 60px;
+  background-image: url(../images/reviews/reviews-bgimg-phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-title {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  &-photo {
+    display: none;
+  }
+
+  &-photo-container {
+    position: relative;
+    display: inline-block;
+    width: 182px;
+    height: 300px;
+    margin-left: 16px;
+    background-color: transparent;
+    border: 3px solid #FFF1E3;
+    margin-right: 10px;
+  }
+
+  &-photo-main {
+    position: absolute;
+    top: 13px;
+    left: -17px
+  }
+
+  &-images {
+    margin-bottom: 20px;
+  }
+
+  &-content {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: lowercase;
+  }
+
+  &-button {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: transparent;
+    border: none;
+    &-right {
+      background-image: url(../images/reviews/right-arrow.svg);
+    }
+    &-left {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .reviews {
+    padding: 30px 0 80px;
+    background-image: url(../images/reviews/reviews-bgimg-tablet.png);
+
+    &-info {
+      width: 450px;
+      margin: 0 auto;
+    }
+
+    &-title {
+      margin-bottom: 30px;
+    }
+
+    &-photo {
+      display: inline-block;
+      margin-right: 8px;
+      &-main {
+        margin-right: 8px;
+      }
+      &-mainimg{
+        width: 180px;
+        height: 270px;
+      }
+      &:nth-child(4) {
+        margin-right: 0px;
+      }
+    }
+    
+    &-images {
+      width: 650px;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    &-photo-container {
+      margin-bottom: -16px;
+    }
+
+    &-button {
+      position: absolute;
+      background-position: center;
+      bottom: 0px;
+
+      &-left {
+        display: inline-block;
+        background-image: url(../images/reviews/left-arrow.svg);
+        left: -50px;
+      }
+
+      &-right {
+        right: -50px;
+      }
+
+    }
+  }
+
+}
+
+@media(min-width: 1320px) {
+  .reviews {
+    padding: 50px 0 95px;
+    background-image: url(../images/reviews/reviews-bgimg-desktop.png);
+
+    &-title {
+      text-align: left;
+      margin-bottom: 45px;
+    }
+
+    &-images {
+      width: 650px;
+      margin-bottom: 60px;
+    }
+
+    &-info {
+      width: 590px;
+      margin-top:0;
+      margin-bottom:0;
+      margin-left:auto;
+      margin-right: 170px;
+    }
+
+    &-button-right {
+      right: -30px;
+    }
+
+  }
+}

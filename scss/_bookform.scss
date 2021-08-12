@@ -1,0 +1,256 @@
+.bookform {
+  padding: 50px 0 80px;
+
+  &-title {
+    margin-bottom: 20px;
+    color: #222222;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    margin-bottom: 30px;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: lowercase;
+    text-align: center;
+  }
+
+  &-label {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    display: block;
+    color: #222222;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+
+  &-input {
+    display: inline-block;
+    width: 288px;
+    height: 44px;
+    margin-bottom: 15px;
+    padding: 0px 16px;
+    color: #222222;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    align-content: center;
+
+    &::placeholder {
+      color: #DFDFDF;
+    }
+  }
+
+  &-container {
+    width: 288px;
+    margin-bottom: 15px;
+    padding: 18px 0px;
+    padding-left: 20px;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+
+    &-lastblock{
+      margin-bottom: 30px;
+    }
+  }
+
+  &-radio {
+    display: none;
+
+    &-label {
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+    &-label::before {
+      display: inline-block;
+      margin-right: 11px;
+      content: url(../images/bookform/radio-1.svg);
+      vertical-align: middle;
+    }
+
+    &:checked + label::before{
+      display: inline-block;
+     content: url(../images/bookform/radio-2.svg);
+    }
+  }
+
+  &-checkbox {
+    display: none;
+
+    &-label {
+      margin-bottom: 0px;
+      margin-left: 0px;
+
+      &-5 {
+        display: none;
+      }
+      &-6 {
+        display: none;
+      }
+    }
+
+    &-label::before {
+      display: inline-block;
+      margin-right: 11px;
+      content: url(../images/bookform/chexkbox-1.svg);
+      vertical-align: middle;
+    }
+
+    &:checked + label::before{
+      display: inline-block;
+     content: url(../images/bookform/checkbox-2.svg);
+    }
+  }
+
+  &-button {
+    width: 288px;
+    height: 52px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FF7A00;
+    border: 0px;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bookform {
+    padding: 64px 0;
+    background-image: url(../images/bookform/bookform-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-contentcontainer {
+      margin: 0 auto;
+      padding: 55px 0 64px;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+
+      &-wrapper {
+        width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    &-title {
+      width: 450px;
+      margin: 0 auto;
+      margin-bottom: 18px;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      text-transform: initial;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 55px;
+    }
+
+    &-label {
+      display: inline-block;
+      margin-left: 25px;
+
+      &-5 {
+        display: inline-block;
+      }
+      &-6 {
+        display: inline-block;
+      }
+    }
+
+    &-container {
+      display: block;
+      width: 600px;
+      margin-bottom: 20px;
+      padding:  10px 26px;
+      columns: 2;
+      column-gap: 70px;
+      &-lastblock {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-input {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 0 25px;
+
+      &-first {
+        margin-right: 24px;
+      }
+
+      &-name {
+        width: 600px;
+      }
+
+      &-datetime {
+        display: inline-block;
+        width: 280px;
+        &-1 {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &-button {
+      display: block;
+      width: 165px;
+      height: 52px;
+      margin: 0 auto;
+    }
+    &-container-lastblock {
+      margin-bottom: 25px;
+    }
+   
+  }
+}
+
+@media (min-width: 1320px) {
+  .bookform {
+    padding: 63px 0 64px;
+
+    &-contentcontainer {
+      width: 852px;
+      margin: 0 auto;
+
+      &-wrapper {
+        width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    &-container-lastblock {
+      margin-bottom: 25px;
+    }
+   
+
+  }
+}

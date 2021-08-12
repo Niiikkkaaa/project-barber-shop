@@ -1,0 +1,138 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding:  15px 0;
+  background-color: rgba(34, 34, 34, 100%);
+
+  &-logo {
+    display: none;
+  }
+
+  &-nawigation-links {
+    display: none;
+  }
+
+  &-naw {
+    &:hover .header-naw-img{
+      fill: #FF7A00;
+    }
+  }
+
+  &-cart {
+    margin-right: 2px;
+    &:hover .header-cart-img{
+      fill: #FF7A00;
+    }
+  
+    &-number {
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+    }
+  }
+
+  &-buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding:  32px 0;
+  }
+}
+
+@media (min-width: 1320px) {
+
+  .header {
+    padding:  23px 0;
+
+    &-naw {
+      display: none;
+    }
+
+    &-cart-image {
+      width: 42px;
+      height: 42px;
+    }
+
+    &-logo {
+      display: inline-block;
+      margin-right: 80px ;
+    }
+
+    &-nawigation-links{
+      display: inline-block;
+
+      &-item {
+        display: inline-block;
+        margin-right: 36px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+
+        &:before {
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          margin-right: 4px;
+          content: '';
+          vertical-align: middle;
+          background-color: transparent;
+          border-radius: 50%;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        &:hover {
+          color: #FF7A00;
+          &::before {
+            background-color: #FF7A00;
+          }
+        }
+      }
+    }
+
+    &-buttons {
+      display: inline-block;
+
+      &-item {
+        width: 165px;
+        height: 52px;
+        //BUTTON TEXT
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center; 
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+        background-color: transparent;
+        text-transform: uppercase;
+        
+        &-contact {
+          width: 175px;
+        }
+
+        &:hover {
+          background-color: #FF7A00;
+          border-color: #FF7A00;
+        }
+        
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &-cartitem {
+      margin-right: 44px;
+    }
+  }
+}

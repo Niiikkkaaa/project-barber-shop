@@ -1,0 +1,233 @@
+.products {
+  padding: 38px 0 60px;
+
+  &-title {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  &-image {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &-item {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    &-title {
+      margin-bottom: 5px;
+      color: #222222;
+      font-family: 'Montserrat';
+      font-size: 16px;
+      line-height: 20px;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: capitalize;
+      text-align: left;
+    }
+
+    &-text {
+      width: 180px;
+      margin-bottom: 10px;
+      color: #222222;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      align-items: center;
+    }
+
+    &-price {
+      margin-bottom: 20px;
+      color: #FF7A00;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      align-items: center;
+    }
+
+    &-button {
+      display: inline-block;
+      height: 52px;
+      border: 1px solid #222222;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #222222;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      align-items: center;
+      text-transform: uppercase;
+
+      &-shop {
+        width: 162px;
+        margin-right: 10px;
+      }
+
+      &-add {
+        width: 52px;
+        background-image: url(../images/products/plus-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: transparent;
+      }
+    }
+  }
+
+  &-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-left {
+      background-image: url(../images/products/left-arrow.svg)
+    }
+    &-right {
+      background-image: url(../images/products/right-arrow.svg)
+    }
+    &-container {
+      width: 110px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.mob-display-none {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  //.mob-display-none {
+  //  display: inline-block;
+  //}
+
+  .products {
+    padding: 64px 0 130px;
+
+    &-title {
+      margin-bottom: 70px;
+    }
+
+    &-image {
+      margin-bottom: 14px;
+    }
+
+    &-item {
+      position: relative;
+      display: inline-block;
+      margin-right: 75px;
+      margin-bottom: 93px;
+
+      &:nth-child(2n){
+        margin-right: 0px;
+      }
+      &:nth-child(n+2){
+        margin-bottom: 0px;
+      }
+
+      &-title {
+        margin-bottom: 2px;
+      }
+      &-text {
+        margin-bottom: 5px;
+      }
+      &-price {
+        margin-bottom: 20px;
+      }
+
+      &-button{
+         &:hover {
+          background-color: #FFF2E5;
+        }
+      }
+    }
+
+    &-container {
+      width: 540px;
+      margin: 0 auto;
+    }
+
+    &-button-container {
+      display: none;
+    }
+
+    &-sale {
+      position: absolute;
+      width: 129px;
+      height: 42px;
+      left: -30px;
+      top: -30px;
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: #FF7A00;
+      box-shadow: 0px 5px 10px rgba(61, 58, 55, 0.2);
+      border: 0;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (min-width: 1320px) {
+  .products {
+    padding: 81px 0 175px;
+
+    &-title {
+      margin-bottom: 78px;
+    }
+
+    &-container {
+      width: 1150px;
+      margin: 0 auto;
+    }
+
+    &-image {
+      margin-bottom: 20px;
+    }
+
+    &-item {
+      margin-bottom: 0px;
+
+      &:nth-child(n){
+        margin-right: 75px;
+      }
+      &:nth-last-child(-n+1) {
+        margin-right: 0px;
+      }
+
+
+      &-title {
+        margin-bottom: 5px;
+      }
+
+      &-text {
+        margin-bottom: 4px;
+      }
+
+      &-price {
+        margin-bottom: 20px;
+      }
+    }
+
+   
+  }
+}

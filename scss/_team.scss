@@ -1,0 +1,148 @@
+.team {
+  padding: 25px 0;
+
+  &-title {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  &-photo-container {
+    position: relative;
+    display: inline-block;
+    width: 198px;
+    height: 325px;
+    margin-left: 16px;
+    background-color: #FF7A00;
+  }
+
+  &-images {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &-photo {
+    display: none;
+  }
+
+  &-photo-main {
+    position: absolute;
+    top: 16px;
+    left: -16px
+  }
+
+  &-button {
+    position: absolute;
+    bottom: 0px;
+    right: -15px;
+    width: 53px;
+    height: 53px;
+    background: #FFF2E5;
+    background-image: url(../images/team/btn-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0px;
+  }
+
+  &-photo-label {
+    margin-bottom: 5px;
+    color: #FF7A00;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  &-content {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: lowercase;
+  }
+ 
+}
+
+@media(min-width: 768px) {
+  .team {
+    padding: 54px 0 60px;
+    background-image: url(../images/team/team-bgimg-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: center top 70px;
+
+    
+    &-title {
+      margin-bottom: 20px
+    }
+
+    &-images {
+      margin-bottom: 30px;
+    }
+
+    &-photo {
+      display: inline-block;
+      margin-right: 8px;
+
+      &-container {
+        margin-bottom: -17px;
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      } 
+
+      &-label {
+        margin-bottom: 12px;
+      }
+
+    }
+
+    &-info-container {
+      width: 440px;
+      margin-left: 155px;
+    }
+  }
+}
+
+@media(min-width: 1320px) {
+  .team {
+    padding: 88px 0 83px;
+
+
+    &-images {
+      display: inline-block;
+      width: 710px;
+      margin-right: 45px;
+    }
+
+    &-button {
+      right: 0;
+    }
+
+    &-photo {
+      width: 134px;
+      height: 200px;
+
+      &-label {
+        margin-bottom: 10px;
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+
+    &-info-container {
+      display: inline-block;
+      margin-left: 0;
+      width: 437px;
+    }
+
+    &-title {
+      margin-bottom: 35px;
+    }
+  }
+}

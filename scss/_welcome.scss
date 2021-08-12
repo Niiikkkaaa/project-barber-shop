@@ -1,0 +1,90 @@
+.welcome {
+  height: 100vh;
+  padding: 280px 0 50px;
+  background-color: #222222;
+  background-image: url(../images/welcome/welcome-bg-phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-text {
+    color: #FFF1E3;
+    padding-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-transform: initial;  
+
+    &::before {
+      display: block;
+      content: url(../images/welcome/welcome-logo-phone.svg);
+    }
+  }
+
+  &-button {
+    width: 288px;
+    height: 52px;
+    left: 16px;
+    top: 473px;
+    background: #FF7A00;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    padding:  235px 0 45px;
+    background-image: url(../images/welcome/welcome-bg-tablet.png);
+
+    &-text {
+      width: 400px;
+      margin-bottom: 5px;
+      font-weight: bold;
+
+      &::before {
+        margin-bottom: 6px;
+        content: url(../images/welcome/welcome-logo-tablet.svg);
+      }
+    }
+
+    &-button {
+      width: 165px;
+      height: 52px;
+    }
+  }
+}
+
+
+@media (min-width: 1320px) {
+  .welcome {
+    padding:  308px 0 311px;
+    background-image: url(../images/welcome/welcome-bg-desktop.png);
+
+    &-text {
+      width: 600px;
+      margin-bottom: 25px;
+      font-size: 32px;
+      line-height: 39px;
+
+      &::before {
+        margin-bottom: 53px;
+        content: url(../images/welcome/welcome-logo-desktop.svg);
+      }
+    }
+
+    &-button {
+      width: 165px;
+      height: 52px;
+    }
+  }
+}
