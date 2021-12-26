@@ -86,3 +86,5 @@ reviewsbtnPrev.addEventListener("click", function () {
     reviewscounter =(rewnumberOfImages+1)
   } 
 });
+
+//commit
